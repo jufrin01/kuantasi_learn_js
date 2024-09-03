@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -7,64 +7,119 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f1f1f1;
+    padding: 20px;
 }
 
-.container {
-    max-width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container-item{
-    width: 60%;
-    height: 75vh;
+.container-item {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
     background-color: #ccc;
-    padding: 10px;
-    border: 1px solid white;
+    padding: 20px;
 }
 
-.form_header{
+.form_header {
     color: red;
     text-align: center;
-    padding-top: 10px;
     padding-bottom: 10px;
-    margin-bottom: 8px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #999;
 }
 
-.form-item{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-}
-
-.form-item input {
-    padding: 16px;
-    border : none ;
-    border-bottom: 1px solid ;
+.form-item {
+    margin-bottom: 15px;
 }
 
 .form-item label {
-    font-size: 15px;
-    margin-bottom: 8px;
-    border-bottom: 1px solid #ccc;
-
+    display: block;
+    margin-bottom: 5px;
 }
 
-.form-item button {
-    padding: 16px;
-    margin-bottom: 8px;
+.form-item input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #999;
 }
 
-#btn_submit{
-    padding: 10px 16px;
-    background-color: #4CAF50;
+#btn_submit {
+    width: 100%;
+    padding: 10px;
+    background: #4CAF50;
     color: white;
-    /*border: none;*/
+
+}
+
+.charts-box {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 3px solid red;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
 }
 
 #btn_submit:hover {
     background-color: red;
+}
+
+.char-header {
+    text-align: center;
+    margin: 10px;
+}
+
+#btn_print {
+    margin-top: 8px;
+    padding: 8px 16px;
+    background: #4CAF50;
+    color: white;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+span {
+    color: red;
+}
+
+#btn_delete{
+    margin-left: 10px;
+    padding: 8px 16px;
+    background: #f44336;
+    color: white;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#btn_update{
+    margin-left: 10px;
+    padding: 8px 16px;
+    background: #4CAF50;
+    color: white;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

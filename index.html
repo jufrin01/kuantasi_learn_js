@@ -10,31 +10,56 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="container-item">
-            <div class="form_header">
-                <h1>Kuantasi Cetak</h1>
-                <hr>
+<div class="container">
+    <div class="container-item">
+        <div class="form_header">
+            <h1>Kuantasi Cetak</h1>
+        </div>
+        <div class="form-box">
+            <div class="form-item">
+                <label>Nama:</label>
+                <input type="text" id="nama" name="name" placeholder="masukan Nama">
             </div>
-            <div class="form-box">
-                <div class="form-item">
-                    <label>Nama:</label>
-                    <input type="text" id="nama" name="name" placeholder="masukan Nama">
-                </div>
-                <div class="form-item">
-                    <label>Barang:</label>
-                    <input type="text" id="barang" placeholder="masukan nama Barang">
-                </div>
-                <div class="form-item">
-                    <label>Harga:</label>
-                    <input type="text" id="harga" placeholder="masukan Harga Barang">
-                </div>
-                <div class="form-item">
-                    <button id="btn_submit">Submit</button>
-                </div>
+            <div class="form-item">
+                <label>Barang:</label>
+                <input type="text" id="barang" placeholder="masukan nama Barang">
+            </div>
+            <div class="form-item">
+                <label>Harga:</label>
+                <input type="text" id="harga" placeholder="masukan Harga Barang">
+            </div>
+            <div class="form-item">
+                <button id="btn_submit">Submit</button>
+                <button id="btn_update" style="display: none;">Update</button>
+                <button id="btn_delete" style="display: none;">Delete</button>
             </div>
         </div>
     </div>
+    <div class="charts-box">
+        <div class="char-header">
+            <h3>Charts Barang</h3>
+            <span id="nama-chart"></span>
+        </div>
+        <div class="charts-table">
+            <table border="1" cellspacing="0">
+                <thead>
+                <tr>
+                    <th>id</th>
+                    <th>Nama</th>
+                    <th>Harga</th>
+                    <th>Aksi</th>
+                </tr>
+                </thead>
+                <tbody id="tBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="submit-print">
+        <button id="btn_print">Cetak
+        </button>
+    </div>
+</div>
 <script src="JS/script.js"></script>
 </body>
 
